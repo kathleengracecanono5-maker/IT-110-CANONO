@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practical Application Activity</title>
+</head>
+<body id="page-body">
+
+    <header id="main-header">
+        <h1>HTML Practical Application Activity</h1>
+        <nav>
+            <p><strong>Quick Navigation:</strong></p>
+            <ul>
+                <li><a href="#images-section">Go to Images</a></li>
+                <li><a href="#links-section">Go to Hyperlinks</a></li>
+                <li><a href="#multimedia-section">Go to Multimedia</a></li>
+                <li><a href="#tags-section">Go to Useful Tags</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main id="main-content">
+
+        <section id="images-section">
+            <h2>Images</h2>
+            
+            <p>Image 1: Direct Image Tag</p>
+            <img src="c:\Users\karen\Downloads\facebookprofile.jpe" alt="A profile picture of Kathleen" width="200">
+
+            <p>Image 2: Sized Image Tag</p>
+            <img src="c:\Users\karen\Downloads\website-development-banner.avif" alt="A banner image showing web development code" width="400" height="150">
+
+            <p>Image 3: Figure with Figcaption</p>
+            <figure>
+                <img src="c:\Users\karen\Downloads\workspace.webp" alt="A clean workspace setup with a laptop and coffee" width="300">
+                <figcaption>Figure 1: My study setup where I practice web programming and design.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="links-section">
+            <h2>Hyperlinks</h2>
+            <ul>
+
+                <li><strong>Internal Link:</strong> <a href="about.html">Read more on my About Page</a></li>
+
+                <li><strong>External Link:</strong> <a href="https://developer.canono.org" target="_blank">Visit MDN Web Docs</a></li>
+
+                <li><strong>Email Link:</strong> <a href="mailto:kathleengracecanono5@gmail.com">Send me an Email</a></li>
+
+                <li><strong>Same-Page Anchor Link:</strong> <a href="#main-header">Jump Back to Header</a></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="multimedia-section">
+            <h2>Multimedia</h2>
+
+            <h3>Audio Sample</h3>
+            <audio controls>
+                <source src="c:\Users\karen\Downloads\audio-sample.mp3" type="audio/mpeg">
+                <source src="media/audio-sample.ogg" type="audio/ogg">
+            </audio>
+
+            <h3>Video Sample</h3>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ok-plXXHlWw?si=d5vsLM1WEstRccf6&amp;start=66"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+            
+        </section>
+
+        <hr>
+
+        <section id="tags-section">
+            <h2>Useful Tags</h2>
+
+            <p>I am pursuing a degree in <mark>BS Information Technology</mark>.</p>
+
+            <p>We are currently learning <abbr title="HyperText Markup Language">HTML</abbr> and modern web standards.</p>
+
+            <blockquote cite="https://en.wikipedia.org/wiki/HTML">
+                HTML is the standard markup language for documents designed to be displayed in a web browser.
+            </blockquote>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <section id="dom-section">
+            <h2>HTML Document Object Model (DOM)</h2>
+
+            <p>
+                The <strong>Document Object Model (DOM)</strong> is a programming interface for web documents. It represents the structure of an HTML document as a logical tree of nodes (objects), where elements, attributes, and text are arranged in parent-child and sibling relationships.
+            </p>
+
+            <h3>DOM Parent-Child Relationships in this Page</h3>
+            <table border="1" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>Parent Node</th>
+                        <th>Child Node(s)</th>
+                        <th>Relationship Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;main&gt;</code></td>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td>The <code>&lt;main&gt;</code> container holds each content section as direct child nodes.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;figure&gt;</code></td>
+                        <td><code>&lt;img&gt;</code>, <code>&lt;figcaption&gt;</code></td>
+                        <td>The figure wraps both the image asset and its accompanying text caption.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;ul&gt;</code></td>
+                        <td><code>&lt;li&gt;</code></td>
+                        <td>Unordered list tags act as parents to individual list item nodes.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <details>
+                <summary>Click to view DOM Tree Structure Details</summary>
+                <p>In the DOM tree, <code>&lt;html&gt;</code> serves as the root parent node, containing <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> as immediate children[cite: 2]. All other HTML elements nest under <code>&lt;body&gt;</code> in a hierarchical tree structure.</p>
+            </details>
+
+            <br>
+
+            <figure>
+                <img src="images/dom-tree.png" alt="Diagram illustrating the HTML DOM Tree Structure" width="450">
+                <figcaption>Figure 2: Diagram of the HTML Document Object Model Node Tree.</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Kathleen Grace Gaid Canono. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
